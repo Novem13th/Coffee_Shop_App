@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="525.0" prefWidth="500.0" style="-fx-background-color: #2C3639;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.application.ResetController">
+    <children>
+        <Pane prefHeight="67.0" prefWidth="500.0" style="-fx-background-color: #dcd7c9;">
+            <children>
+                <Text fill="#2c3639" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ВСЕ ГОТОВО!" textAlignment="CENTER" wrappingWidth="500.0">
+                    <font>
+                        <Font name="Segoe UI Semibold" size="50.0" />
+                    </font>
+                </Text>
+            </children>
+        </Pane>
+        <Text fill="#c38556" layoutX="12.0" layoutY="114.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Квитанция сохранена в директорий: D:\!JAVA\COFFEE HOUSE MENU\RECEIPTS" textAlignment="CENTER" wrappingWidth="476.77734375">
+            <font>
+                <Font name="Segoe UI Semibold" size="30.0" />
+            </font>
+        </Text>
+        <Button fx:id="GreatButton" layoutX="153.0" layoutY="386.0" mnemonicParsing="false" prefHeight="67.0" prefWidth="193.0" style="-fx-background-color: #2C3639; -fx-border-color: #dcd7c9; -fx-border-radius: 10; -fx-font-fill: White;" text="ОТЛИЧНО!" textAlignment="CENTER" textFill="#dcd7c9">
+            <font>
+                <Font name="Segoe UI Semibold" size="25.0" />
+            </font>
+        </Button>
+      <TextField fx:id="IndexTextField" editable="false" layoutX="176.0" layoutY="253.0" prefHeight="39.0" prefWidth="156.0" style="-fx-background: transperent; -fx-border-color: #dcd7c9; -fx-border-radius: 5; -fx-text-fill: #dcd7c9;">
+         <font>
+            <Font name="Segoe UI Semibold" size="15.0" />
+         </font>
+      </TextField>
+      <Text fill="#dcd7c9" layoutX="14.0" layoutY="281.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Индекс(номер): " textAlignment="JUSTIFY" wrappingWidth="156.0">
+         <font>
+            <Font name="Segoe UI Semibold" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="#dcd7c9" layoutX="14.0" layoutY="336.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Имя: " textAlignment="JUSTIFY" wrappingWidth="156.0">
+         <font>
+            <Font name="Segoe UI Semibold" size="20.0" />
+         </font>
+      </Text>
+      <TextField fx:id="NameTextField" editable="false" layoutX="176.0" layoutY="308.0" prefHeight="39.0" prefWidth="156.0" style="-fx-background: transperent; -fx-border-color: #dcd7c9; -fx-border-radius: 5; -fx-text-fill: #dcd7c9;">
+         <font>
+            <Font name="Segoe UI Semibold" size="15.0" />
+         </font>
+      </TextField>
+      <Text fill="#c38556" layoutX="83.0" layoutY="496.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Приходите еще раз!" textAlignment="CENTER" wrappingWidth="333.77734375">
+         <font>
+            <Font name="Segoe UI Semibold" size="30.0" />
+         </font>
+      </Text>
+    </children>
+</AnchorPane>

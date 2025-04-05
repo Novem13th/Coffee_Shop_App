@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="860.0" style="-fx-background-color: #2C3639;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.application.CustomerController">
+    <children>
+        <Pane prefHeight="67.0" prefWidth="860.0" style="-fx-background-color: #dcd7c9;">
+            <children>
+                <Text fill="#2c3639" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ПОДТВЕРЖДЕНИЕ" textAlignment="CENTER" wrappingWidth="860.0">
+                    <font>
+                        <Font name="Segoe UI Semibold" size="50.0" />
+                    </font>
+                </Text>
+            </children>
+        </Pane>
+        <Text fill="#c38556" layoutX="14.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ваше имя:" textAlignment="CENTER" wrappingWidth="283.77734375">
+            <font>
+                <Font name="Segoe UI Semibold" size="45.0" />
+            </font>
+        </Text>
+        <Button fx:id="ReadyButton" layoutX="624.0" layoutY="176.0" mnemonicParsing="false" prefHeight="67.0" prefWidth="193.0" style="-fx-background-color: #2C3639; -fx-border-color: #dcd7c9; -fx-border-radius: 10; -fx-font-fill: White;" text="ГОТОВО!" textAlignment="CENTER" textFill="#dcd7c9">
+            <font>
+                <Font name="Segoe UI Semibold" size="25.0" />
+            </font>
+        </Button>
+      <TextField fx:id="CustomerNameTxtField" layoutX="40.0" layoutY="151.0" prefHeight="81.0" prefWidth="544.0" style="-fx-background-color: #2C3639; -fx-text-fill: #dcd7c9; -fx-border-color: #dcd7c9; -fx-border-width: 5; -fx-border-radius: 10;" text="Your Name">
+         <font>
+            <Font name="Segoe UI Semibold" size="50.0" />
+         </font></TextField>
+    </children>
+</AnchorPane>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="MainAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="950.0" prefWidth="860.0" style="-fx-background-color: #2C3639;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.application.FinalController">
+    <children>
+        <Pane prefHeight="67.0" prefWidth="860.0" style="-fx-background-color: #dcd7c9;">
+         <children>
+                  <Text fill="#2c3639" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="КОРЗИНА" textAlignment="CENTER" wrappingWidth="860.0">
+                      <font>
+                          <Font name="Segoe UI Semibold" size="50.0" />
+                      </font>
+                  </Text>
+         </children>
+        </Pane>
+        <Text fill="#c38556" layoutX="336.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Список товаров" textAlignment="CENTER">
+            <font>
+                <Font name="Segoe UI Semibold" size="25.0" />
+            </font>
+        </Text>
+      <Pane layoutX="50.0" layoutY="121.0" prefHeight="718.0" prefWidth="760.0" style="-fx-border-color: #dcd7c9; -fx-border-radius: 25 25 0 0;">
+         <children>
+            <Text fill="#dcd7c9" layoutX="89.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Название товаров" textAlignment="CENTER" wrappingWidth="305.0">
+               <font>
+                  <Font name="Segoe UI Semibold" size="35.0" />
+               </font>
+            </Text>
+            <Text fill="#dcd7c9" layoutX="561.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Цена" textAlignment="CENTER" wrappingWidth="86.0">
+               <font>
+                  <Font name="Segoe UI Semibold" size="35.0" />
+               </font>
+            </Text>
+            <Circle fill="#dcd7c9" layoutX="31.0" layoutY="29.0" radius="12.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+         </children>
+      </Pane>
+      <Line endX="-13.0" endY="692.0" layoutX="510.0" layoutY="147.0" startX="-13.0" startY="-18.955078125" stroke="#dcd7c9" />
+      <ScrollPane layoutX="50.0" layoutY="180.0" prefHeight="659.0" prefWidth="760.0" style="-fx-background: transperent; -fx-border-color: #dcd7c9;">
+         <content>
+            <GridPane fx:id="ItemAndPriceGrid" alignment="CENTER" layoutX="50.0" layoutY="180.0" prefHeight="49.0" prefWidth="726.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="458.0" minWidth="438.0" prefWidth="456.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="300.0" minWidth="10.0" prefWidth="274.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints vgrow="SOMETIMES" />
+              </rowConstraints>
+            </GridPane>
+         </content>
+      </ScrollPane>
+      <TextField fx:id="FinalPriceTxtField" editable="false" layoutX="91.0" layoutY="855.0" prefHeight="67.0" prefWidth="365.0" style="-fx-background-color: #2C3639; -fx-border-color: #dcd7c9; -fx-border-radius: 10; -fx-text-fill: #dcd7c9;" text="0kzt">
+         <font>
+            <Font name="Segoe UI Light" size="25.0" />
+         </font>
+      </TextField>
+      <Button fx:id="ConfirmButton" layoutX="505.0" layoutY="855.0" mnemonicParsing="false" prefHeight="67.0" prefWidth="295.0" style="-fx-background-color: #2C3639; -fx-border-color: #dcd7c9; -fx-border-radius: 10; -fx-font-fill: White;" text="ПОДТВЕРДИТЬ" textAlignment="CENTER" textFill="#dcd7c9">
+         <font>
+            <Font name="Segoe UI Semibold" size="25.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>
